@@ -5,17 +5,10 @@ let draggedItem = null;
 
 for (let i = 0; i < list_items.length; i++) {
 	const item = list_items[i];
-	console.log('here')
 	item.addEventListener('dragstart', function () {
 		draggedItem = item.cloneNode(true);
-		console.log(draggedItem);
 	});
-dso
-	item.addEventListener('dragend', function () {
-		setTimeout(function () {
-			draggedItem.style.display = 'block';
-		}, 0);
-	})
+
 
 	for (let j = 0; j < lists.length; j++) {
 		const list = lists[j];
